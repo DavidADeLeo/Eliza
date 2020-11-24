@@ -1,0 +1,155 @@
+:root {
+    --main-color: #fbd2d7;  /*var(--main-color)*/
+    --main2-color: rgb(152, 255, 152);
+    --secondary-color: purple;
+    --secondary-ish-color: darkslategray;
+}
+
+.trash { display: none; border:solid black; border-radius: 10px; padding: 5px; background-color: brown; margin: 50px; }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "nav main main"
+        "nav main main";
+
+    background: white;
+}
+
+header {
+    grid-area: header;
+
+    border-bottom: black solid 2px;
+    border-radius: 5px;
+
+    padding: 15px;
+    margin-bottom: 5px;
+
+    background-color: var(--main-color);
+}
+
+nav {
+    grid-area: nav;
+    flex-direction: column;
+
+    border: black solid 2px;
+    border-radius: 5px;
+    
+    padding: 15px;
+    margin-right: 5px;
+
+    color: black;
+    background-color: var(--main-color);
+}
+
+main {
+    grid-area: main;
+
+
+    border: var(--secondary-color) solid 5px;
+    border-radius: 5px;
+
+    padding: 15px;
+
+    color: var(--secondary-ish-color);
+    background-color: var(--main2-color);
+    /*
+        Home page gives a nice one page display of your topic of interest
+        Should include: At least four different areas on the page, e.g, 
+            header
+            Menu (aside)
+            Main Content
+            Footer
+    */
+}
+/*The menu (nav)*/
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+/*The title (header)*/
+
+#title {
+    order: 2;
+    color: var(--secondary-color);
+}
+
+#subtitle {
+    margin: auto;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    order: 3;
+    color: var(--secondary-ish-color);
+}
+
+#animation {
+    order: 4;
+
+    position: relative;
+
+    color: var(--secondary-color);
+
+    animation-name: paddingChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+img {
+    order: 1;
+
+    padding: 2px;
+    margin: 5px;
+
+    border: 1px solid black; /*dashed, dotted, none, double, groove, ridge, inset, outset*/
+
+    width: 50px;
+    height: 50px;
+}
+/*The main (main)*/
+
+.flex {
+    display: flex;
+}
+
+/*Other*/
+
+.hidden {
+    display: none;
+}
+
+@keyframes changeColor {
+    0%   {color: black;      }
+    25%  {color: darkmagenta;}
+    50%  {color: magenta;    }
+    75%  {color: darkmagenta;}
+    100% {color: black;      }
+}
+
+@keyframes paddingChange {
+    0%   {top: -20px; left: 0px;        }
+    25%  {top: 20px; left: -40px; }
+    50%  {top: -20px; left: -40px;  }
+    75%  {top: 20px; left: 0px;     }
+    100% {top: -20px; left: 0px;        }
+}
+
+/*
+h1 ~ section {
+    border-top: 1px solid black;
+}
+*/
+
+input[type="submit"] {
+    cursor: pointer;
+}
+

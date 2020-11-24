@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eliza's WebSite</title>
+        <script src="Eliza'sWebSite.js"></script>
+        <link rel="stylesheet" href="Eliza'sWebSite.css">
+        <link rel="shortcut icon" type="image/png" href="favicon E.jpg">
+    </head>
+    <body>
+        <header class = "flex">
+            <h1 id = "title">Eliza's Website!!!!</h1>
+            <p id = "subtitle">Welcome the some of the most important information you will ever see!</p>
+            <a href="https://uvu.instructure.com/" target="_blank"><img src="favicon E.jpg" alt="??? ERROR ERROR BROKEN BROKEN!!!!!" width = "200" height = "200"></a>
+            <p id = "animation">This website is mandatory to look through</p>
+        </header>
+
+        <nav class = "flex">
+            <button id = "B-home">Home Page</button>
+            <button id = "B-info">Information About Eliza</button>
+            <button id = "B-facts">Fun Facts</button>
+            <button id = "B-quiz">The Quiz</button>
+            <button id = "B-contact">Contact / Testimonials</button>
+        </nav>
+
+        <main>
+            <section class = "flex" id = "home">
+                <h2 id = "main-title">Congradulation, you are about to have a new favorite person!</h2>
+                <p>The topic that I have chosen is my wife, Eliza! This website will be all about her</p>
+            </section>
+                
+            <section id = "info" class = "flex hidden">
+                <p>Information about Eliza</p>
+            </section>
+                
+            <section id = "facts" class = "flex hidden">
+                <p>Fun Facts</p>
+            </section>
+
+            <section id = "quiz" class = "flex hidden">
+                <p>The Quiz</p>
+            </section>
+
+            <section id = "contact" class = "flex hidden">
+                <p>Contact and Testimonials</p>
+            </section>
+        </main>
+        
+        <section class="trash">
+            <section>
+                    <section>
+                        <p>Either I am going to make the best website in existence...</p>
+                        <p>Or I am going to be really bummed out ):</p>
+                    </section>
+
+                    <div>
+                        <label for="cool">Did you think this was cool?</label>
+                        <input type="text" name="cool" id="cool" required> <!--type = file, radio-->
+                    </div>
+                    <div>
+                        <label for="quesiton">Do you have any comments?</label>
+                        <textarea name="questions" id="questions" rows="3" cols="25"></textarea>
+                    </div>
+                    <div>
+                        <label for="like">Did you like it?</label>
+                        <input type="radio" name="like" value="yes" checked>
+                        <label for="yes">Yes?</label>
+                        <input type="radio" name="like" value="no">
+                        <label for="no">No?</label>
+                    </div>
+                    <div>
+                        <label for="option">Which would you prefer?</label>
+                        <select name="option">
+                            <option value="dandd">D and D</option>
+                            <option value="dnd">DnD</option>
+                            <option value="d&d">D&D</option>
+                        </select>
+                    </div>
+            </section>
+
+            <section>
+                <div class="block">
+                    <label>
+                        <label for="eliza"><input type="checkbox" name="people" value="eliza">Eliza De Leo</label>
+                    </label>
+                </div>
+                <div class="block">
+                    <label>
+                        <label for="david"><input type="checkbox" name="people" value="david">David De Leo</label>
+                    </label>
+                </div>
+
+            </section>
+
+            <section>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <p class="author" id="eliza">By David De Leo <span>(2020)</span></p>
+                </div>
+            </section>
+        </section>
+        </form>
+    </body>
+</html>
